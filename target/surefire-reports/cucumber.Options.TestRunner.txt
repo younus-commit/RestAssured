@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Options.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.610 s <<< FAILURE! -- in cucumber.Options.TestRunner
+Validating Place API's.Verify if Place is being Succesfully added using AddPlaceAPI -- Time elapsed: 0.839 s <<< ERROR!
+java.io.FileNotFoundException: \Users\rahulshetty\restassurednew\APIFramework\src\test\java\resources\global.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at resources.Utils.getGlobalValue(Utils.java:43)
+	at resources.Utils.requestSpecification(Utils.java:28)
+	at stepDefinations.StepDefination.add_Place_Payload_with(StepDefination.java:40)
+	at ✽.Add Place Payload with "AAhouse"  "English" "World cross center"(file:///C:/Users/nbasha/Desktop/Venus/RestAssured-Rahul/APIFramework/APIFramework/src/test/java/features/placeValidations.feature:4)
+
+Validating Place API's.Verify if Delete Place functionality is working -- Time elapsed: 0.006 s <<< ERROR!
+java.io.FileNotFoundException: \Users\rahulshetty\restassurednew\APIFramework\src\test\java\resources\global.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at resources.Utils.getGlobalValue(Utils.java:43)
+	at resources.Utils.requestSpecification(Utils.java:28)
+	at stepDefinations.StepDefination.add_Place_Payload_with(StepDefination.java:40)
+	at stepDefinations.Hooks.beforeScenario(Hooks.java:18)
+
